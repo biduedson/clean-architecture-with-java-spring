@@ -4,23 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d9a9ba78-94fa-42ab-a441-14381b11a422" name="Changes" comment="chore: adding dependencies between modules">
+    <list default="true" id="d9a9ba78-94fa-42ab-a441-14381b11a422" name="Changes" comment="feate: create interfasce  TransactionValidateUseCase.java">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/src/main/java/br/com/curso/application/usecaseImpl/CreateTransactionPinUseCaseImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/src/main/java/br/com/curso/application/usecaseImpl/CreateUserUseCaseImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/src/main/java/br/com/curso/application/usecaseImpl/CreateWalletUseCaseImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/src/main/java/br/com/curso/application/usecaseImpl/EmailAvailableUseCaseImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/src/main/java/br/com/curso/application/usecaseImpl/TaxNumberAvailableUseCaseImpl.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/core/src/main/java/br/com/curso/core/domain/Taxnumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/br/com/curso/core/domain/Transaction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/br/com/curso/core/domain/TransactionPin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/br/com/curso/core/domain/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/br/com/curso/core/domain/Wallet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/br/com/curso/core/domain/enuns/TransactionStatusEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/br/com/curso/core/domain/enuns/UserTypeEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/br/com/curso/core/exception/BadRequestException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/br/com/curso/core/exception/InternalServerError.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/br/com/curso/core/exception/NotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/br/com/curso/core/exception/TaxNumberException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/br/com/curso/core/exception/TransactionPinException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/br/com/curso/core/exception/TransferException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/br/com/curso/core/exception/enuns/ErrorCodeEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/br/com/curso/core/exception/EmailException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usecase/src/main/java/br/com/curso/usecase/TransferUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usecase/src/main/java/br/com/curso/usecase/UserAuthenticateUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usecase/src/main/java/br/com/curso/usecase/UserNotificationUseCase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/br/com/curso/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/main/java/br/com/curso/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/br/com/curso/core/domain/TransactionPin.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/br/com/curso/core/domain/TransactionPin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/br/com/curso/core/exception/enuns/ErrorCodeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/br/com/curso/core/exception/enuns/ErrorCodeEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/br/com/curso/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/usecase/src/main/java/br/com/curso/Main.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +38,7 @@
       <list>
         <option value="Enum" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -84,6 +86,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "jdk.selected.JAVA_MODULE": "17",
     "kotlin-language-version-configured": "true"
@@ -132,12 +135,155 @@
       <option name="project" value="LOCAL" />
       <updated>1711117329111</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="feat: create transaction entity">
+      <option name="closed" value="true" />
+      <created>1711204723344</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1711204723344</updated>
+    </task>
+    <task id="LOCAL-00004" summary="feat: create user entity">
+      <option name="closed" value="true" />
+      <created>1711204731813</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1711204731813</updated>
+    </task>
+    <task id="LOCAL-00005" summary="feat: create created domain exceptions">
+      <option name="closed" value="true" />
+      <created>1711204798175</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1711204798175</updated>
+    </task>
+    <task id="LOCAL-00006" summary="feat: create user type enuns">
+      <option name="closed" value="true" />
+      <created>1711204831378</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1711204831378</updated>
+    </task>
+    <task id="LOCAL-00007" summary="feat: create created domain exceptions">
+      <option name="closed" value="true" />
+      <created>1711204844698</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1711204844698</updated>
+    </task>
+    <task id="LOCAL-00008" summary="feat: create entity Wallet">
+      <option name="closed" value="true" />
+      <created>1711204865454</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1711204865454</updated>
+    </task>
+    <task id="LOCAL-00009" summary="feat: create TransactionStatusEnum">
+      <option name="closed" value="true" />
+      <created>1711204910380</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1711204910380</updated>
+    </task>
+    <task id="LOCAL-00010" summary="delete: delete src">
+      <option name="closed" value="true" />
+      <created>1711204936327</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1711204936327</updated>
+    </task>
+    <task id="LOCAL-00011" summary="chore: update workspace.xml">
+      <option name="closed" value="true" />
+      <created>1711204977421</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1711204977421</updated>
+    </task>
+    <task id="LOCAL-00012" summary="chore: create interfasce ConsultBalanceUseCase.java">
+      <option name="closed" value="true" />
+      <created>1711316361627</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1711316361627</updated>
+    </task>
+    <task id="LOCAL-00013" summary="chore: create interfasce CreateTransactionPinGateway.java">
+      <option name="closed" value="true" />
+      <created>1711316376789</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1711316376789</updated>
+    </task>
+    <task id="LOCAL-00014" summary="chore: create interfasce CreateTransactionPinUseCase">
+      <option name="closed" value="true" />
+      <created>1711316401471</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1711316401471</updated>
+    </task>
+    <task id="LOCAL-00015" summary="chore: create interfasce CreateTransactionUseCase.java">
+      <option name="closed" value="true" />
+      <created>1711316418194</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1711316418194</updated>
+    </task>
+    <task id="LOCAL-00016" summary="feate: create interfasces Create users use case  and gateway">
+      <option name="closed" value="true" />
+      <created>1711316509370</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1711316509370</updated>
+    </task>
+    <task id="LOCAL-00017" summary="feate: create interfasces Tax number available use case anda gateway">
+      <option name="closed" value="true" />
+      <created>1711316582942</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1711316582942</updated>
+    </task>
+    <task id="LOCAL-00018" summary="feate: create interfasce  TransactionValidateUseCase.java">
+      <option name="closed" value="true" />
+      <created>1711316644036</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1711316644036</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="chore: deleting src" />
     <MESSAGE value="chore: adding dependencies between modules" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore: adding dependencies between modules" />
+    <MESSAGE value="feat: create transaction entity" />
+    <MESSAGE value="feat: create user entity" />
+    <MESSAGE value="feat: create user type enuns" />
+    <MESSAGE value="feat: create created domain exceptions" />
+    <MESSAGE value="feat: create entity Wallet" />
+    <MESSAGE value="feat: create TransactionStatusEnum" />
+    <MESSAGE value="delete: delete src" />
+    <MESSAGE value="chore: update workspace.xml" />
+    <MESSAGE value="chore: create interfasce ConsultBalanceUseCase.java" />
+    <MESSAGE value="chore: create interfasce CreateTransactionPinGateway.java" />
+    <MESSAGE value="chore: create interfasce CreateTransactionPinUseCase" />
+    <MESSAGE value="chore: create interfasce CreateTransactionUseCase.java" />
+    <MESSAGE value="feate: create interfasces Create users use case  and gateway" />
+    <MESSAGE value="feate: create interfasces Tax number available use case anda gateway" />
+    <MESSAGE value="feate: create interfasce  TransactionValidateUseCase.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="feate: create interfasce  TransactionValidateUseCase.java" />
   </component>
 </project>
