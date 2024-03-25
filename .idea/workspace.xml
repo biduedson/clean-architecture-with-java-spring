@@ -4,25 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d9a9ba78-94fa-42ab-a441-14381b11a422" name="Changes" comment="feate: create interfasce  TransactionValidateUseCase.java">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/src/main/java/br/com/curso/application/usecaseImpl/CreateTransactionPinUseCaseImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/src/main/java/br/com/curso/application/usecaseImpl/CreateUserUseCaseImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/src/main/java/br/com/curso/application/usecaseImpl/CreateWalletUseCaseImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/src/main/java/br/com/curso/application/usecaseImpl/EmailAvailableUseCaseImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/src/main/java/br/com/curso/application/usecaseImpl/TaxNumberAvailableUseCaseImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/br/com/curso/core/domain/Taxnumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/br/com/curso/core/exception/EmailException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/usecase/src/main/java/br/com/curso/usecase/TransferUseCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/usecase/src/main/java/br/com/curso/usecase/UserAuthenticateUseCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/usecase/src/main/java/br/com/curso/usecase/UserNotificationUseCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/main/java/br/com/curso/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/br/com/curso/core/domain/TransactionPin.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/br/com/curso/core/domain/TransactionPin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/br/com/curso/core/exception/enuns/ErrorCodeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/br/com/curso/core/exception/enuns/ErrorCodeEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/br/com/curso/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/usecase/src/main/java/br/com/curso/Main.java" beforeDir="false" />
-    </list>
+    <list default="true" id="d9a9ba78-94fa-42ab-a441-14381b11a422" name="Changes" comment="delete: deleting files that will not be used" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -263,16 +245,130 @@
       <option name="project" value="LOCAL" />
       <updated>1711316644036</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="feate: create transaction Pin use implementation">
+      <option name="closed" value="true" />
+      <created>1711388986402</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1711388986402</updated>
+    </task>
+    <task id="LOCAL-00020" summary="feate: create wallet use implementation">
+      <option name="closed" value="true" />
+      <created>1711389000694</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1711389000694</updated>
+    </task>
+    <task id="LOCAL-00021" summary="feate: create user use case  implementation">
+      <option name="closed" value="true" />
+      <created>1711389014156</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1711389014156</updated>
+    </task>
+    <task id="LOCAL-00022" summary="feate: create email available use case  implementation">
+      <option name="closed" value="true" />
+      <created>1711389030843</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1711389030843</updated>
+    </task>
+    <task id="LOCAL-00023" summary="feate: create email exception">
+      <option name="closed" value="true" />
+      <created>1711389039772</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1711389039772</updated>
+    </task>
+    <task id="LOCAL-00024" summary="feate: create enum code error">
+      <option name="closed" value="true" />
+      <created>1711389058096</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1711389058096</updated>
+    </task>
+    <task id="LOCAL-00025" summary="feate: create tax number entity">
+      <option name="closed" value="true" />
+      <created>1711389090770</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1711389090770</updated>
+    </task>
+    <task id="LOCAL-00026" summary="feate: create tax number available use ca se implementation">
+      <option name="closed" value="true" />
+      <created>1711389112794</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1711389112794</updated>
+    </task>
+    <task id="LOCAL-00027" summary="chore: refactore transaction pin instance">
+      <option name="closed" value="true" />
+      <created>1711389167239</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1711389167239</updated>
+    </task>
+    <task id="LOCAL-00028" summary="feat: create interface transfer use case">
+      <option name="closed" value="true" />
+      <created>1711389190879</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1711389190879</updated>
+    </task>
+    <task id="LOCAL-00029" summary="feat: create interface authenticate use casa">
+      <option name="closed" value="true" />
+      <created>1711389210606</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1711389210606</updated>
+    </task>
+    <task id="LOCAL-00030" summary="feat: create interface notification use case">
+      <option name="closed" value="true" />
+      <created>1711389228620</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1711389228620</updated>
+    </task>
+    <task id="LOCAL-00031" summary="chore: add components">
+      <option name="closed" value="true" />
+      <created>1711389271393</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1711389271393</updated>
+    </task>
+    <task id="LOCAL-00032" summary="delete: deleting files that will not be used">
+      <option name="closed" value="true" />
+      <created>1711389299145</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1711389299145</updated>
+    </task>
+    <task id="LOCAL-00033" summary="delete: deleting files that will not be used">
+      <option name="closed" value="true" />
+      <created>1711389301836</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1711389301836</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="chore: deleting src" />
-    <MESSAGE value="chore: adding dependencies between modules" />
-    <MESSAGE value="feat: create transaction entity" />
-    <MESSAGE value="feat: create user entity" />
-    <MESSAGE value="feat: create user type enuns" />
-    <MESSAGE value="feat: create created domain exceptions" />
     <MESSAGE value="feat: create entity Wallet" />
     <MESSAGE value="feat: create TransactionStatusEnum" />
     <MESSAGE value="delete: delete src" />
@@ -284,6 +380,20 @@
     <MESSAGE value="feate: create interfasces Create users use case  and gateway" />
     <MESSAGE value="feate: create interfasces Tax number available use case anda gateway" />
     <MESSAGE value="feate: create interfasce  TransactionValidateUseCase.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="feate: create interfasce  TransactionValidateUseCase.java" />
+    <MESSAGE value="feate: create transaction Pin use implementation" />
+    <MESSAGE value="feate: create wallet use implementation" />
+    <MESSAGE value="feate: create user use case  implementation" />
+    <MESSAGE value="feate: create email available use case  implementation" />
+    <MESSAGE value="feate: create email exception" />
+    <MESSAGE value="feate: create enum code error" />
+    <MESSAGE value="feate: create tax number entity" />
+    <MESSAGE value="feate: create tax number available use ca se implementation" />
+    <MESSAGE value="chore: refactore transaction pin instance" />
+    <MESSAGE value="feat: create interface transfer use case" />
+    <MESSAGE value="feat: create interface authenticate use casa" />
+    <MESSAGE value="feat: create interface notification use case" />
+    <MESSAGE value="chore: add components" />
+    <MESSAGE value="delete: deleting files that will not be used" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete: deleting files that will not be used" />
   </component>
 </project>
