@@ -3,7 +3,7 @@ package br.com.curso.core.domain;
 import br.com.curso.core.exception.TaxNumberException;
 import br.com.curso.core.exception.enuns.ErrorCodeEnum;
 
-public class Taxnumber {
+public class TaxNumber {
     private String value;
 
     public TaxNumber(String taxNumber) throws Exception {
