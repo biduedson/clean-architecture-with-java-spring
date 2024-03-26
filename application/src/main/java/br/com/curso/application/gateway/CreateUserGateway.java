@@ -5,5 +5,5 @@ import br.com.curso.core.domain.User;
 import br.com.curso.core.domain.Wallet;
 
 public interface CreateUserGateway {
-   boolean create(User user, Wallet wallet, TransactionPin transactionPin);
+   boolean create(User user, Wallet wallet);
 }
