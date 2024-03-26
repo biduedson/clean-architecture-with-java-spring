@@ -10,18 +10,18 @@ public class User {
     private String emain;
 
     private String password;
-    private  Taxnumber taxnumber;
+    private  TaxNumber taxNumber;
     private  String  fullname;
    private UserTypeEnum type;
    private TransactionPin transactionPin;
    private LocalDateTime createAt;
    private LocalDateTime updateAt;
 
-    public User(UUID id, String emain, String password, Taxnumber taxnumber, String fullname, UserTypeEnum type, TransactionPin transactionPin, LocalDateTime createAt, LocalDateTime updateAt) {
+    public User(UUID id, String emain, String password, TaxNumber taxNumber, String fullname, UserTypeEnum type, TransactionPin transactionPin, LocalDateTime createAt, LocalDateTime updateAt) {
         this.id = id;
         this.emain = emain;
         this.password = password;
-        this.taxnumber = taxnumber;
+        this.taxNumber = taxNumber;
         this.fullname = fullname;
         this.type = type;
         this.transactionPin = transactionPin;
@@ -29,10 +29,10 @@ public class User {
         this.updateAt = updateAt;
     }
 
-    public User(String emain, String password, Taxnumber taxnumber, String fullname, UserTypeEnum type, TransactionPin transactionPin) {
+    public User(String emain, String password, TaxNumber taxNumber, String fullname, UserTypeEnum type, TransactionPin transactionPin) {
         this.emain = emain;
         this.password = password;
-        this.taxnumber = taxnumber;
+        this.taxNumber = taxNumber;
         this.fullname = fullname;
         this.type = type;
         this.transactionPin = transactionPin;
@@ -65,12 +65,12 @@ public class User {
         this.password = password;
     }
 
-    public Taxnumber getTaxnumber() {
-        return taxnumber;
+    public TaxNumber getTaxNumber() {
+        return taxNumber;
     }
 
-    public void setTaxnumber(Taxnumber taxnumber) {
-        this.taxnumber = taxnumber;
+    public void setTaxnumber(TaxNumber taxNumber) {
+        this.taxNumber = taxNumber;
     }
 
     public String getFullname() {
@@ -119,7 +119,7 @@ public class User {
         if (!getId().equals(user.getId())) return false;
         if (!getEmain().equals(user.getEmain())) return false;
         if (!getPassword().equals(user.getPassword())) return false;
-        if (!getTaxnumber().equals(user.getTaxnumber())) return false;
+        if (!getTaxNumber().equals(user.getTaxNumber())) return false;
         if (!getFullname().equals(user.getFullname())) return false;
         if (getType() != user.getType()) return false;
         if (!getTransactionPin().equals(user.getTransactionPin())) return false;
@@ -132,7 +132,7 @@ public class User {
         int result = getId().hashCode();
         result = 31 * result + getEmain().hashCode();
         result = 31 * result + getPassword().hashCode();
-        result = 31 * result + getTaxnumber().hashCode();
+        result = 31 * result + getTaxNumber().hashCode();
         result = 31 * result + getFullname().hashCode();
         result = 31 * result + getType().hashCode();
         result = 31 * result + getTransactionPin().hashCode();
