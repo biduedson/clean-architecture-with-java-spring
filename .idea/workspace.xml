@@ -4,7 +4,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d9a9ba78-94fa-42ab-a441-14381b11a422" name="Changes" comment="delete: deleting files that will not be used" />
+    <list default="true" id="d9a9ba78-94fa-42ab-a441-14381b11a422" name="Changes" comment="delete: deleted use cases and use case implementations no longer used">
+      <change afterPath="$PROJECT_DIR$/application/src/main/java/br/com/curso/application/gateway/FindWalletByTaxNumberGateway.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/src/main/java/br/com/curso/application/gateway/TransactionValidateGateway.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/src/main/java/br/com/curso/application/gateway/TransferGateway.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/src/main/java/br/com/curso/application/gateway/UserAuthenticateGateway.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/src/main/java/br/com/curso/application/gateway/UserNotificationGateway.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/src/main/java/br/com/curso/application/usecaseImpl/FindWalletByTaxNumberUseCaseImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/src/main/java/br/com/curso/application/usecaseImpl/TransactionValidateUseCaseImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/src/main/java/br/com/curso/application/usecaseImpl/TransferUseCaseImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/src/main/java/br/com/curso/application/usecaseImpl/UserAuthenticateUseCaseImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/src/main/java/br/com/curso/application/usecaseImpl/UserNotificationUseCaseImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/br/com/curso/core/exception/AuthenticateException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/br/com/curso/core/exception/InternalServerErrorException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/br/com/curso/core/exception/NotificationException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usecase/src/main/java/br/com/curso/usecase/FindWalletByTaxNumberUseCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/main/java/br/com/curso/application/gateway/CreateUserGateway.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/java/br/com/curso/application/gateway/CreateUserGateway.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/main/java/br/com/curso/application/usecaseImpl/CreateUserUseCaseImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/java/br/com/curso/application/usecaseImpl/CreateUserUseCaseImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/br/com/curso/core/domain/Taxnumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/br/com/curso/core/domain/TaxNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/br/com/curso/core/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/br/com/curso/core/domain/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/br/com/curso/core/exception/InternalServerError.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/br/com/curso/core/exception/enuns/ErrorCodeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/br/com/curso/core/exception/enuns/ErrorCodeEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/usecase/src/main/java/br/com/curso/usecase/CreateTransactionUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/usecase/src/main/java/br/com/curso/usecase/CreateTransactionUseCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/usecase/src/main/java/br/com/curso/usecase/CreateUserUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/usecase/src/main/java/br/com/curso/usecase/CreateUserUseCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/usecase/src/main/java/br/com/curso/usecase/FindUserByTaxNumberUseCase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/usecase/src/main/java/br/com/curso/usecase/TransactionValidateUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/usecase/src/main/java/br/com/curso/usecase/TransactionValidateUseCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/usecase/src/main/java/br/com/curso/usecase/TransferUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/usecase/src/main/java/br/com/curso/usecase/TransferUseCase.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,8 +46,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -365,12 +392,34 @@
       <option name="project" value="LOCAL" />
       <updated>1711389301836</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="delete: deleting files that will not be used">
+      <option name="closed" value="true" />
+      <created>1711389326079</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1711389326079</updated>
+    </task>
+    <task id="LOCAL-00035" summary="chore: add  method to add value">
+      <option name="closed" value="true" />
+      <created>1711413868343</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1711413868343</updated>
+    </task>
+    <task id="LOCAL-00036" summary="delete: deleted use cases and use case implementations no longer used">
+      <option name="closed" value="true" />
+      <created>1711413929186</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1711413929186</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: create entity Wallet" />
-    <MESSAGE value="feat: create TransactionStatusEnum" />
     <MESSAGE value="delete: delete src" />
     <MESSAGE value="chore: update workspace.xml" />
     <MESSAGE value="chore: create interfasce ConsultBalanceUseCase.java" />
@@ -394,6 +443,8 @@
     <MESSAGE value="feat: create interface notification use case" />
     <MESSAGE value="chore: add components" />
     <MESSAGE value="delete: deleting files that will not be used" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete: deleting files that will not be used" />
+    <MESSAGE value="chore: add  method to add value" />
+    <MESSAGE value="delete: deleted use cases and use case implementations no longer used" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete: deleted use cases and use case implementations no longer used" />
   </component>
 </project>
