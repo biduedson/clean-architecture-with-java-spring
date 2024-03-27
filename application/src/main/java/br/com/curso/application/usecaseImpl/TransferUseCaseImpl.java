@@ -33,9 +33,7 @@ private TransactionPinValidateUseCase transactionPinValidateUseCase;
         Wallet to = findWalletByTaxNumberUseCase.findByTaxNumber(toTaxNumber);
         transactionPinValidateUseCase.validate(from.getTransactionPin());
 
-        if(from.getTransactionPin().getBlocked()){
-            throw new PinException(ErrorCodeEnum.PIN0001.getMessage(), ErrorCodeEnum.PIN0001.getCode());
-        }
+
 
         from.transfer(value);
         to.receiveTransfer(value);
