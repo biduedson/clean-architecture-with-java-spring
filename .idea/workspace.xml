@@ -4,12 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d9a9ba78-94fa-42ab-a441-14381b11a422" name="Changes" comment="chore:  add news configurations">
-      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/resources/ application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/resources/application-local.yml" afterDir="false" />
+    <list default="true" id="d9a9ba78-94fa-42ab-a441-14381b11a422" name="Changes" comment="feat:  install dependencies">
+      <change afterPath="$PROJECT_DIR$/application/src/main/java/br/com/curso/application/gateway/TransactionPinValidateGateway.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/src/main/java/br/com/curso/application/gateway/UpdateTransactionPinUseCase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/main/java/br/com/curso/application/usecaseImpl/TransactionPinValidateUseCaseImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/java/br/com/curso/application/usecaseImpl/TransactionPinValidateUseCaseImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/main/java/br/com/curso/application/usecaseImpl/TransferUseCaseImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/java/br/com/curso/application/usecaseImpl/TransferUseCaseImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/br/com/curso/core/domain/TransactionPin.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/br/com/curso/core/domain/TransactionPin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/src/main/java/br/com/curso/core/exception/InternalServerError.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/br/com/curso/core/exception/enuns/ErrorCodeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/br/com/curso/core/exception/enuns/ErrorCodeEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/usecase/src/main/java/br/com/curso/usecase/TransactionPinValidateUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/usecase/src/main/java/br/com/curso/usecase/TransactionPinValidateUseCase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,8 +29,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -106,30 +110,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1711115016575</updated>
-    </task>
-    <task id="LOCAL-00030" summary="feat: create interface notification use case">
-      <option name="closed" value="true" />
-      <created>1711389228620</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1711389228620</updated>
-    </task>
-    <task id="LOCAL-00031" summary="chore: add components">
-      <option name="closed" value="true" />
-      <created>1711389271393</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1711389271393</updated>
-    </task>
-    <task id="LOCAL-00032" summary="delete: deleting files that will not be used">
-      <option name="closed" value="true" />
-      <created>1711389299145</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1711389299145</updated>
     </task>
     <task id="LOCAL-00033" summary="delete: deleting files that will not be used">
       <option name="closed" value="true" />
@@ -499,11 +479,34 @@
       <option name="project" value="LOCAL" />
       <updated>1711498000800</updated>
     </task>
-    <option name="localTasksCounter" value="79" />
+    <task id="LOCAL-00079" summary="feat:  install dependencies">
+      <option name="closed" value="true" />
+      <created>1711556594477</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1711556594477</updated>
+    </task>
+    <task id="LOCAL-00080" summary="feat:  install dependencies">
+      <option name="closed" value="true" />
+      <created>1711556605773</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1711556605773</updated>
+    </task>
+    <task id="LOCAL-00081" summary="feat:  install dependencies">
+      <option name="closed" value="true" />
+      <created>1711556610141</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1711556610141</updated>
+    </task>
+    <option name="localTasksCounter" value="82" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="refactore: changed class name from Tax Number to Tax Number" />
     <MESSAGE value="feat: added more error codes to enums" />
     <MESSAGE value="feat: add UserAuthenticateUseCase Implementation" />
     <MESSAGE value="feat: add UserNotificationUseCase Implementation" />
@@ -528,6 +531,7 @@
     <MESSAGE value="feat:  add TransactionPinValidateUseCase Implementation" />
     <MESSAGE value="chore:  add news code exceptions" />
     <MESSAGE value="chore:  add news configurations" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore:  add news configurations" />
+    <MESSAGE value="feat:  install dependencies" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat:  install dependencies" />
   </component>
 </project>
