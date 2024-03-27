@@ -7,16 +7,14 @@ import java.time.LocalDateTime;
 
 public class TransactionPin {
     private Long id;
-    private User user;
     private String pin;
     private Integer attempt;
-    private boolean blocked;
+    private Boolean blocked;
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
 
-    public TransactionPin(Long id, User user, String pin, Integer attempt, boolean blocked, LocalDateTime createAt, LocalDateTime updateAt) {
+    public TransactionPin(Long id,String pin, Integer attempt, Boolean blocked, LocalDateTime createAt, LocalDateTime updateAt) {
         this.id = id;
-        this.user = user;
         this.pin = pin;
         this.attempt = attempt;
         this.blocked = blocked;
@@ -24,8 +22,7 @@ public class TransactionPin {
         this.updatedAt = updateAt;
     }
 
-    public TransactionPin(User user, String pin) throws TransactionPinException {
-        this.user = user;
+    public TransactionPin(String pin) throws TransactionPinException {
         setPin(pin);
         this.attempt = 3;
         this.blocked = false;
@@ -43,13 +40,7 @@ public class TransactionPin {
         this.id = id;
     }
 
-    public User getUser() {
-        return user;
-    }
 
-    public void setUser(User user) {
-        this.user = user;
-    }
 
     public String getPin() {
         return pin;
@@ -74,10 +65,8 @@ public class TransactionPin {
         this.attempt = attempt;
     }
 
-    public boolean isBlocked() {
-        return blocked;
-    }
 
+    public  Boolean getBlocked(){return  blocked;}
     public void setBlocked(boolean blocked) {
         this.blocked = blocked;
     }
@@ -95,5 +84,29 @@ public class TransactionPin {
 
     public void setUpdatedAt(LocalDateTime updatedAt) {
         this.updatedAt = updatedAt;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof TransactionPin that)) return false;
+
+        if (getId() != null ? !getId().equals(that.getId()) : that.getId() != null) return false;
+        if (!getPin().equals(that.getPin())) return false;
+        if (!getAttempt().equals(that.getAttempt())) return false;
+        if (!getBlocked().equals(that.getBlocked())) return false;
+        if (!getCreatedAt().equals(that.getCreatedAt())) return false;
+        return getUpdatedAt() != null ? getUpdatedAt().equals(that.getUpdatedAt()) : that.getUpdatedAt() == null;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = getId() != null ? getId().hashCode() : 0;
+        result = 31 * result + getPin().hashCode();
+        result = 31 * result + getAttempt().hashCode();
+        result = 31 * result + getBlocked().hashCode();
+        result = 31 * result + getCreatedAt().hashCode();
+        result = 31 * result + (getUpdatedAt() != null ? getUpdatedAt().hashCode() : 0);
+        return result;
     }
 }
