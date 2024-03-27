@@ -8,14 +8,14 @@ public enum ErrorCodeEnum {
 
     TR0001("Usuário lojista não tem a função transferência disponiovel.", "TR-0001"),
     TR0002("Saldo indisponivel", "TR-0002"),
-    TRP0001("Pin invalido","TRP-0001"),
-
     TR0003("Houve um erro ao fazer a transferencia.", "TR-0003"),
+    TRP0001("Pin invalido","TRP-0001"),
 
     WA0001("Carteira não encontrada.", "WA-0001"),
     NO0001("Houve  um erro na notificação do usuário.", "NO-0001"),
     TR0004("Transferencia não autorizada.", "TR-0004"),
-    ATH0001("Houve  um erro na autenticação.", "AT-0001")
+    ATH0001("Houve  um erro na autenticação.", "AT-0001"),
+    PIN0001("Pin de transação bloqueado.", "PIN-0001")
     ;
 
 
