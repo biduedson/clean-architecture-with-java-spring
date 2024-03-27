@@ -15,7 +15,8 @@ public enum ErrorCodeEnum {
     NO0001("Houve  um erro na notificação do usuário.", "NO-0001"),
     TR0004("Transferencia não autorizada.", "TR-0004"),
     ATH0001("Houve  um erro na autenticação.", "AT-0001"),
-    PIN0001("Pin de transação bloqueado.", "PIN-0001")
+    PIN0001("Pin de transação bloqueado.", "PIN-0001"),
+    PIN0002("Pin incorreto %d tentativa(s) restante(s).", "PIN-0002")
     ;
 
 
@@ -41,5 +42,9 @@ public enum ErrorCodeEnum {
 
     public void setCode(String code) {
         this.code = code;
+    }
+
+    public static String pin002GetMessage(Integer attempt){
+        return  String.format(PIN0002.message,attempt);
     }
 }
