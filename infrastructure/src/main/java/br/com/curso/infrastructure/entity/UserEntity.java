@@ -1,23 +1,19 @@
-package br.com.curso.entity;
+package br.com.curso.infrastructure.entity;
 
 import br.com.curso.core.domain.enuns.UserTypeEnum;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import java.time.LocalDateTime;
 import java.util.UUID;
 
-@Entity
+@Data// Esta anotaçãogera automaticamente os métodos toString(), equals(), hashCode(), getter e setter para todos os campos da classe.
 @AllArgsConstructor
 @NoArgsConstructor
-@Getter
-@Setter
+@Entity
 @Table(name = "Users")
 public class UserEntity {
-    @Column(name = "id", nullable = false)
+    @Column(name = "Id", nullable = false)
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID id;
@@ -44,13 +40,4 @@ public class UserEntity {
     private LocalDateTime UpdatedAt;
 
 
-    public UserEntity(UUID id, String email, String password, String taxNumber, String fullName, UserTypeEnum type) {
-        this.id = id;
-        this.email = email;
-        this.password = password;
-        this.taxNumber = taxNumber;
-        FullName = fullName;
-        this.type = type;
-        this.createdAt = LocalDateTime.now();
-    }
 }
