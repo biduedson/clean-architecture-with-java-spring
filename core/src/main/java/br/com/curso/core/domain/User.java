@@ -2,8 +2,10 @@ package br.com.curso.core.domain;
 
 import br.com.curso.core.domain.enuns.UserTypeEnum;
 
+import java.sql.Timestamp;
 import java.time.LocalDateTime;
 import java.util.UUID;
+
 
 public class User {
     private UUID id;
@@ -13,26 +15,28 @@ public class User {
     private  TaxNumber taxNumber;
     private  String  fullname;
    private UserTypeEnum type;
-   private LocalDateTime createAt;
-   private LocalDateTime updateAt;
+   private Timestamp createAt;
+   private Timestamp updateAt;
 
-    public User(UUID id, String emain, String password, TaxNumber taxNumber, String fullname, UserTypeEnum type, LocalDateTime createAt, LocalDateTime updateAt) {
+    public User(String emain, String password, TaxNumber taxNumber, String fullname, UserTypeEnum type) {
         this.id = id;
         this.emain = emain;
         this.password = password;
         this.taxNumber = taxNumber;
         this.fullname = fullname;
         this.type = type;
-        this.createAt = createAt;
+        this.createAt = Timestamp.valueOf(LocalDateTime.now());
         this.updateAt = updateAt;
     }
 
     public User(String emain, String password, TaxNumber taxNumber, String fullname, UserTypeEnum type, TransactionPin transactionPin) {
+        this.id = UUID.randomUUID();
         this.emain = emain;
         this.password = password;
         this.taxNumber = taxNumber;
         this.fullname = fullname;
         this.type = type;
+        this.createAt = Timestamp.valueOf(LocalDateTime.now());
     }
 
     public User() {
@@ -87,18 +91,23 @@ public class User {
     }
 
 
-    public LocalDateTime getCreateAt() {
+    public Timestamp getCreateAt() {
         return createAt;
     }
 
 
 
-    public LocalDateTime getUpdateAt() {
+    public Timestamp getUpdateAt() {
         return updateAt;
     }
 
-    public void setUpdateAt(LocalDateTime updateAt) {
+    public void setUpdateAt(Timestamp updateAt) {
         this.updateAt = updateAt;
+    }
+
+    public Timestamp timeStampConvert(){
+        LocalDateTime date = LocalDateTime.now();
+        return Timestamp.valueOf(date);
     }
 
     @Override
