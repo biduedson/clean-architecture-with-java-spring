@@ -28,7 +28,7 @@ private TransactionPinValidateUseCase transactionPinValidateUseCase;
     }
 
     @Override
-    public boolean transfer(String fromTaxNumber , String toTaxNumber, BigDecimal value, String pin) throws InternalServerErrorException, TransferException, NotFoundException, NotificationException, PinException {
+    public boolean transfer(String fromTaxNumber , String toTaxNumber, BigDecimal value, String pin) throws Exception, TransferException {
         Wallet from = findWalletByTaxNumberUseCase.findByTaxNumber(fromTaxNumber);
         Wallet to = findWalletByTaxNumberUseCase.findByTaxNumber(toTaxNumber);
         transactionPinValidateUseCase.validate(from.getTransactionPin());
