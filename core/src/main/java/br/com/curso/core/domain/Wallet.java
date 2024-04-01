@@ -5,6 +5,7 @@ import br.com.curso.core.exception.TransferException;
 import br.com.curso.core.exception.enuns.ErrorCodeEnum;
 
 import java.math.BigDecimal;
+import java.sql.Timestamp;
 import java.time.LocalDateTime;
 
 public class Wallet {
@@ -13,11 +14,11 @@ public class Wallet {
     private TransactionPin transactionPin;
     private BigDecimal balance;
     private User user;
-    private LocalDateTime createdAt;
+    private Timestamp createdAt;
 
-    private LocalDateTime updatedAt;
+    private Timestamp updatedAt;
 
-    public Wallet(Long id, TransactionPin transactionPin, BigDecimal balance, User user, LocalDateTime createdAt, LocalDateTime updatedAt) {
+    public Wallet(Long id, TransactionPin transactionPin, BigDecimal balance, User user, Timestamp createdAt, Timestamp updatedAt) {
         this.id = id;
         this.balance = balance;
         this.user = user;
@@ -30,7 +31,7 @@ public class Wallet {
         this.transactionPin = transactionPin;
         this.balance = balance;
         this.user = user;
-        this.createdAt = LocalDateTime.now();
+        this.createdAt = Timestamp.valueOf(LocalDateTime.now());
     }
 
     public Wallet() {
@@ -75,15 +76,15 @@ public class Wallet {
         this.user = user;
     }
 
-    public LocalDateTime getCreatedAt() {
+    public Timestamp getCreatedAt() {
         return createdAt;
     }
 
-    public LocalDateTime getUpdatedAt() {
+    public Timestamp getUpdatedAt() {
         return updatedAt;
     }
 
-    public void setUpdatedAt(LocalDateTime updatedAt) {
+    public void setUpdatedAt(Timestamp updatedAt) {
         this.updatedAt = updatedAt;
     }
 

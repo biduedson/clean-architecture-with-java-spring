@@ -3,6 +3,7 @@ package br.com.curso.core.domain;
 import br.com.curso.core.exception.TransactionPinException;
 import br.com.curso.core.exception.enuns.ErrorCodeEnum;
 
+import java.sql.Timestamp;
 import java.time.LocalDateTime;
 
 public class TransactionPin {
@@ -10,10 +11,10 @@ public class TransactionPin {
     private String pin;
     private Integer attempt;
     private Boolean blocked;
-    private LocalDateTime createdAt;
-    private LocalDateTime updatedAt;
+    private Timestamp createdAt;
+    private Timestamp updatedAt;
 
-    public TransactionPin(Long id,String pin, Integer attempt, Boolean blocked, LocalDateTime createAt, LocalDateTime updateAt) {
+    public TransactionPin(Long id,String pin, Integer attempt, Boolean blocked, Timestamp createAt, Timestamp updateAt) {
         this.id = id;
         this.pin = pin;
         this.attempt = attempt;
@@ -26,7 +27,7 @@ public class TransactionPin {
         setPin(pin);
         this.attempt = 3;
         this.blocked = false;
-        this.createdAt = LocalDateTime.now();
+        this.createdAt = Timestamp.valueOf(LocalDateTime.now());
     }
 
     public TransactionPin() {
@@ -81,18 +82,18 @@ public class TransactionPin {
         this.blocked = blocked;
     }
 
-    public LocalDateTime getCreatedAt() {
+    public Timestamp getCreatedAt() {
         return createdAt;
     }
-    public void setCreatedAt(LocalDateTime createdAt) {
+    public void setCreatedAt(Timestamp createdAt) {
         this.createdAt = createdAt;
     }
 
-    public LocalDateTime getUpdatedAt() {
+    public Timestamp getUpdatedAt() {
         return updatedAt;
     }
 
-    public void setUpdatedAt(LocalDateTime updatedAt) {
+    public void setUpdatedAt(Timestamp updatedAt) {
         this.updatedAt = updatedAt;
     }
 

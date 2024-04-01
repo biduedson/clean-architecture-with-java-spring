@@ -3,12 +3,13 @@ package br.com.curso.infrastructure.entity;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.sql.Timestamp;
 import java.time.LocalDateTime;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "TransactionsPin")
+@Table(name = "transactionspin")
 public class TransactionPinEntity {
     @Column(name = "Id")
     @Id
@@ -24,17 +25,18 @@ public class TransactionPinEntity {
     @Column(name = "Blocked", nullable = false)
     private  Boolean blocked;
 
-    @Column(name = "CreatedAt", nullable = false)
-    private LocalDateTime createdAt;
+    @Column(name = "createdat", nullable = false)
+    private Timestamp createdAt;
 
-    @Column(name = "UpdatedAt")
-    private LocalDateTime UpdatedAt;
+    @Column(name = "updateat")
+    private Timestamp UpdateAt;
 
-    public TransactionPinEntity(String pin, Integer attempt, Boolean blocked, LocalDateTime createdAt, LocalDateTime updatedAt) {
+
+    public TransactionPinEntity(String pin, Integer attempt, Boolean blocked, Timestamp createdAt, Timestamp updateAt) {
         this.pin = pin;
         this.attempt = attempt;
         this.blocked = blocked;
         this.createdAt = createdAt;
-        UpdatedAt = updatedAt;
+        UpdateAt = updateAt;
     }
 }
