@@ -4,35 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d9a9ba78-94fa-42ab-a441-14381b11a422" name="Changes" comment="feat: add more components">
-      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/java/br/com/curso/infrastructure/config/UserConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/java/br/com/curso/infrastructure/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/java/br/com/curso/infrastructure/dto/request/CreateUserRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/java/br/com/curso/infrastructure/dto/response/BaseResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/java/br/com/curso/infrastructure/dto/response/ErrorResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/java/br/com/curso/infrastructure/dto/response/ValidationError.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/java/br/com/curso/infrastructure/service/EmailAvailableGatewayImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/java/br/com/curso/infrastructure/service/TaxNumberAvailableGatewayImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/resources/application.properties" afterDir="false" />
+    <list default="true" id="d9a9ba78-94fa-42ab-a441-14381b11a422" name="Changes" comment="chore: added exception">
+      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/java/br/com/curso/infrastructure/service/FindWalletByTaxNumberGatewayImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/main/java/br/com/curso/application/usecaseImpl/CreateUserUseCaseImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/java/br/com/curso/application/usecaseImpl/CreateUserUseCaseImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/br/com/curso/core/domain/TransactionPin.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/br/com/curso/core/domain/TransactionPin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/br/com/curso/core/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/br/com/curso/core/domain/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/br/com/curso/core/domain/Wallet.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/br/com/curso/core/domain/Wallet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/src/main/java/br/com/curso/core/exception/InternalServerError.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/br/com/curso/infrastructure/entity/TransactionPinEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/java/br/com/curso/infrastructure/entity/TransactionPinEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/br/com/curso/infrastructure/entity/UserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/java/br/com/curso/infrastructure/entity/UserEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/br/com/curso/infrastructure/entity/WalletEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/java/br/com/curso/infrastructure/entity/WalletEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/br/com/curso/infrastructure/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/java/br/com/curso/infrastructure/mapper/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/br/com/curso/infrastructure/repository/UserEntityRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/java/br/com/curso/infrastructure/repository/UserEntityRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/br/com/curso/infrastructure/service/CreateUserGatewayImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/java/br/com/curso/infrastructure/service/CreateUserGatewayImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/resources/ application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/resources/application-local.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/resources/db/migration/V1__CREATE_TABLE_USER.sql" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/resources/db/migration/V1__CREATE_TABLE_USER.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/resources/db/migration/V2__CREATE_TABLE_TRANSACTIONS_PIN.sql" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/resources/db/migration/V2__CREATE_TABLE_TRANSACTIONS_PIN.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/resources/db/migration/V3__CREATE_TABLE_WALLETS.sql" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/resources/db/migration/V3__CREATE_TABLE_WALLETS.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/resources/db/migration/V4__CREATE_TABLE_TRANSACTIONS.sql" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/resources/db/migration/V4__CREATE_TABLE_TRANSACTIONS.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,246 +112,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1711115016575</updated>
-    </task>
-    <task id="LOCAL-00068" summary="chore: add pin exception to transfer method">
-      <option name="closed" value="true" />
-      <created>1711497637834</created>
-      <option name="number" value="00068" />
-      <option name="presentableId" value="LOCAL-00068" />
-      <option name="project" value="LOCAL" />
-      <updated>1711497637834</updated>
-    </task>
-    <task id="LOCAL-00069" summary="feat: add PinException">
-      <option name="closed" value="true" />
-      <created>1711497663931</created>
-      <option name="number" value="00069" />
-      <option name="presentableId" value="LOCAL-00069" />
-      <option name="project" value="LOCAL" />
-      <updated>1711497663931</updated>
-    </task>
-    <task id="LOCAL-00070" summary="feat: add equals">
-      <option name="closed" value="true" />
-      <created>1711497683963</created>
-      <option name="number" value="00070" />
-      <option name="presentableId" value="LOCAL-00070" />
-      <option name="project" value="LOCAL" />
-      <updated>1711497683963</updated>
-    </task>
-    <task id="LOCAL-00071" summary="chore:  add blocked transaction check">
-      <option name="closed" value="true" />
-      <created>1711497749657</created>
-      <option name="number" value="00071" />
-      <option name="presentableId" value="LOCAL-00071" />
-      <option name="project" value="LOCAL" />
-      <updated>1711497749657</updated>
-    </task>
-    <task id="LOCAL-00072" summary="chore:  removed the need to inform pin">
-      <option name="closed" value="true" />
-      <created>1711497849995</created>
-      <option name="number" value="00072" />
-      <option name="presentableId" value="LOCAL-00072" />
-      <option name="project" value="LOCAL" />
-      <updated>1711497849995</updated>
-    </task>
-    <task id="LOCAL-00073" summary="feat:  add CreateTransactionUseCase Implementation">
-      <option name="closed" value="true" />
-      <created>1711497878567</created>
-      <option name="number" value="00073" />
-      <option name="presentableId" value="LOCAL-00073" />
-      <option name="project" value="LOCAL" />
-      <updated>1711497878567</updated>
-    </task>
-    <task id="LOCAL-00074" summary="feat:  add ConsultBalanceUseCase Implementation">
-      <option name="closed" value="true" />
-      <created>1711497895413</created>
-      <option name="number" value="00074" />
-      <option name="presentableId" value="LOCAL-00074" />
-      <option name="project" value="LOCAL" />
-      <updated>1711497895413</updated>
-    </task>
-    <task id="LOCAL-00075" summary="feat:  add TransactionPinValidateUseCase Implementation">
-      <option name="closed" value="true" />
-      <created>1711497944629</created>
-      <option name="number" value="00075" />
-      <option name="presentableId" value="LOCAL-00075" />
-      <option name="project" value="LOCAL" />
-      <updated>1711497944629</updated>
-    </task>
-    <task id="LOCAL-00076" summary="chore:  add news code exceptions">
-      <option name="closed" value="true" />
-      <created>1711497981730</created>
-      <option name="number" value="00076" />
-      <option name="presentableId" value="LOCAL-00076" />
-      <option name="project" value="LOCAL" />
-      <updated>1711497981730</updated>
-    </task>
-    <task id="LOCAL-00077" summary="chore:  add news configurations">
-      <option name="closed" value="true" />
-      <created>1711497995765</created>
-      <option name="number" value="00077" />
-      <option name="presentableId" value="LOCAL-00077" />
-      <option name="project" value="LOCAL" />
-      <updated>1711497995765</updated>
-    </task>
-    <task id="LOCAL-00078" summary="chore:  add news configurations">
-      <option name="closed" value="true" />
-      <created>1711498000800</created>
-      <option name="number" value="00078" />
-      <option name="presentableId" value="LOCAL-00078" />
-      <option name="project" value="LOCAL" />
-      <updated>1711498000800</updated>
-    </task>
-    <task id="LOCAL-00079" summary="feat:  install dependencies">
-      <option name="closed" value="true" />
-      <created>1711556594477</created>
-      <option name="number" value="00079" />
-      <option name="presentableId" value="LOCAL-00079" />
-      <option name="project" value="LOCAL" />
-      <updated>1711556594477</updated>
-    </task>
-    <task id="LOCAL-00080" summary="feat:  install dependencies">
-      <option name="closed" value="true" />
-      <created>1711556605773</created>
-      <option name="number" value="00080" />
-      <option name="presentableId" value="LOCAL-00080" />
-      <option name="project" value="LOCAL" />
-      <updated>1711556605773</updated>
-    </task>
-    <task id="LOCAL-00081" summary="feat:  install dependencies">
-      <option name="closed" value="true" />
-      <created>1711556610141</created>
-      <option name="number" value="00081" />
-      <option name="presentableId" value="LOCAL-00081" />
-      <option name="project" value="LOCAL" />
-      <updated>1711556610141</updated>
-    </task>
-    <task id="LOCAL-00082" summary="feat:  add UpdateTransactionPinUseCase interface">
-      <option name="closed" value="true" />
-      <created>1711569068990</created>
-      <option name="number" value="00082" />
-      <option name="presentableId" value="LOCAL-00082" />
-      <option name="project" value="LOCAL" />
-      <updated>1711569068990</updated>
-    </task>
-    <task id="LOCAL-00083" summary="feat:  add TransactionPinValidateGateway interface">
-      <option name="closed" value="true" />
-      <created>1711569090374</created>
-      <option name="number" value="00083" />
-      <option name="presentableId" value="LOCAL-00083" />
-      <option name="project" value="LOCAL" />
-      <updated>1711569090374</updated>
-    </task>
-    <task id="LOCAL-00084" summary="chore:  adding PinException to the method">
-      <option name="closed" value="true" />
-      <created>1711569151846</created>
-      <option name="number" value="00084" />
-      <option name="presentableId" value="LOCAL-00084" />
-      <option name="project" value="LOCAL" />
-      <updated>1711569151846</updated>
-    </task>
-    <task id="LOCAL-00085" summary="chore:  added incorrect pin error messages">
-      <option name="closed" value="true" />
-      <created>1711569211243</created>
-      <option name="number" value="00085" />
-      <option name="presentableId" value="LOCAL-00085" />
-      <option name="project" value="LOCAL" />
-      <updated>1711569211243</updated>
-    </task>
-    <task id="LOCAL-00086" summary="chore:  added to the Attempt method attempt counter until possible blocking">
-      <option name="closed" value="true" />
-      <created>1711569282934</created>
-      <option name="number" value="00086" />
-      <option name="presentableId" value="LOCAL-00086" />
-      <option name="project" value="LOCAL" />
-      <updated>1711569282934</updated>
-    </task>
-    <task id="LOCAL-00087" summary="chore:  completed implementation to TransactionPinValidateUseCaseImpl">
-      <option name="closed" value="true" />
-      <created>1711569359674</created>
-      <option name="number" value="00087" />
-      <option name="presentableId" value="LOCAL-00087" />
-      <option name="project" value="LOCAL" />
-      <updated>1711569359674</updated>
-    </task>
-    <task id="LOCAL-00088" summary="chore:  removed blocking check and implementing it in another class">
-      <option name="closed" value="true" />
-      <created>1711569423187</created>
-      <option name="number" value="00088" />
-      <option name="presentableId" value="LOCAL-00088" />
-      <option name="project" value="LOCAL" />
-      <updated>1711569423187</updated>
-    </task>
-    <task id="LOCAL-00089" summary="chore:  update configurations">
-      <option name="closed" value="true" />
-      <created>1711569457565</created>
-      <option name="number" value="00089" />
-      <option name="presentableId" value="LOCAL-00089" />
-      <option name="project" value="LOCAL" />
-      <updated>1711569457565</updated>
-    </task>
-    <task id="LOCAL-00090" summary="refactore:  modified to the correct migration naming standard">
-      <option name="closed" value="true" />
-      <created>1711649188570</created>
-      <option name="number" value="00090" />
-      <option name="presentableId" value="LOCAL-00090" />
-      <option name="project" value="LOCAL" />
-      <updated>1711649188571</updated>
-    </task>
-    <task id="LOCAL-00091" summary="feat:  add user entity to repository">
-      <option name="closed" value="true" />
-      <created>1711649226273</created>
-      <option name="number" value="00091" />
-      <option name="presentableId" value="LOCAL-00091" />
-      <option name="project" value="LOCAL" />
-      <updated>1711649226273</updated>
-    </task>
-    <task id="LOCAL-00092" summary="feat:  add DesafioPicPayApplication class">
-      <option name="closed" value="true" />
-      <created>1711649255547</created>
-      <option name="number" value="00092" />
-      <option name="presentableId" value="LOCAL-00092" />
-      <option name="project" value="LOCAL" />
-      <updated>1711649255547</updated>
-    </task>
-    <task id="LOCAL-00093" summary="refactory:  modified port 8080 to 8081">
-      <option name="closed" value="true" />
-      <created>1711649307130</created>
-      <option name="number" value="00093" />
-      <option name="presentableId" value="LOCAL-00093" />
-      <option name="project" value="LOCAL" />
-      <updated>1711649307131</updated>
-    </task>
-    <task id="LOCAL-00094" summary="refactory:  modified port 8080 to 8081">
-      <option name="closed" value="true" />
-      <created>1711649311882</created>
-      <option name="number" value="00094" />
-      <option name="presentableId" value="LOCAL-00094" />
-      <option name="project" value="LOCAL" />
-      <updated>1711649311882</updated>
-    </task>
-    <task id="LOCAL-00095" summary="refactory:  REMOVED REPEATED DEPENDENCIES">
-      <option name="closed" value="true" />
-      <created>1711649368282</created>
-      <option name="number" value="00095" />
-      <option name="presentableId" value="LOCAL-00095" />
-      <option name="project" value="LOCAL" />
-      <updated>1711649368282</updated>
-    </task>
-    <task id="LOCAL-00096" summary="feat: create WalletEntity">
-      <option name="closed" value="true" />
-      <created>1711657048393</created>
-      <option name="number" value="00096" />
-      <option name="presentableId" value="LOCAL-00096" />
-      <option name="project" value="LOCAL" />
-      <updated>1711657048393</updated>
-    </task>
-    <task id="LOCAL-00097" summary="feat: create UserEntity">
-      <option name="closed" value="true" />
-      <created>1711657062714</created>
-      <option name="number" value="00097" />
-      <option name="presentableId" value="LOCAL-00097" />
-      <option name="project" value="LOCAL" />
-      <updated>1711657062714</updated>
     </task>
     <task id="LOCAL-00098" summary="feat: create TransactionPinEntity">
       <option name="closed" value="true" />
@@ -530,43 +265,283 @@
       <option name="project" value="LOCAL" />
       <updated>1711724616130</updated>
     </task>
-    <option name="localTasksCounter" value="117" />
+    <task id="LOCAL-00117" summary="refactor: modified to postgres default">
+      <option name="closed" value="true" />
+      <created>1711980749537</created>
+      <option name="number" value="00117" />
+      <option name="presentableId" value="LOCAL-00117" />
+      <option name="project" value="LOCAL" />
+      <updated>1711980749541</updated>
+    </task>
+    <task id="LOCAL-00118" summary="refactor: changed from localdatetime to timestamp">
+      <option name="closed" value="true" />
+      <created>1711980798251</created>
+      <option name="number" value="00118" />
+      <option name="presentableId" value="LOCAL-00118" />
+      <option name="project" value="LOCAL" />
+      <updated>1711980798251</updated>
+    </task>
+    <task id="LOCAL-00119" summary="refactor: changed from localdatetime to timestamp">
+      <option name="closed" value="true" />
+      <created>1711980816070</created>
+      <option name="number" value="00119" />
+      <option name="presentableId" value="LOCAL-00119" />
+      <option name="project" value="LOCAL" />
+      <updated>1711980816070</updated>
+    </task>
+    <task id="LOCAL-00120" summary="refactor: changed from localdatetime to timestamp">
+      <option name="closed" value="true" />
+      <created>1711980824191</created>
+      <option name="number" value="00120" />
+      <option name="presentableId" value="LOCAL-00120" />
+      <option name="project" value="LOCAL" />
+      <updated>1711980824191</updated>
+    </task>
+    <task id="LOCAL-00121" summary="refactor: changed from localdatetime to timestamp">
+      <option name="closed" value="true" />
+      <created>1711980846969</created>
+      <option name="number" value="00121" />
+      <option name="presentableId" value="LOCAL-00121" />
+      <option name="project" value="LOCAL" />
+      <updated>1711980846969</updated>
+    </task>
+    <task id="LOCAL-00122" summary="chore: added to user">
+      <option name="closed" value="true" />
+      <created>1711980951137</created>
+      <option name="number" value="00122" />
+      <option name="presentableId" value="LOCAL-00122" />
+      <option name="project" value="LOCAL" />
+      <updated>1711980951137</updated>
+    </task>
+    <task id="LOCAL-00123" summary="feat: added ValidationError">
+      <option name="closed" value="true" />
+      <created>1711980966579</created>
+      <option name="number" value="00123" />
+      <option name="presentableId" value="LOCAL-00123" />
+      <option name="project" value="LOCAL" />
+      <updated>1711980966579</updated>
+    </task>
+    <task id="LOCAL-00124" summary="feat: added user controller">
+      <option name="closed" value="true" />
+      <created>1711980982226</created>
+      <option name="number" value="00124" />
+      <option name="presentableId" value="LOCAL-00124" />
+      <option name="project" value="LOCAL" />
+      <updated>1711980982226</updated>
+    </task>
+    <task id="LOCAL-00125" summary="feat: added user config ben">
+      <option name="closed" value="true" />
+      <created>1711981000427</created>
+      <option name="number" value="00125" />
+      <option name="presentableId" value="LOCAL-00125" />
+      <option name="project" value="LOCAL" />
+      <updated>1711981000427</updated>
+    </task>
+    <task id="LOCAL-00126" summary="feat: added TaxNumberAvailableGateway Implementation">
+      <option name="closed" value="true" />
+      <created>1711981047423</created>
+      <option name="number" value="00126" />
+      <option name="presentableId" value="LOCAL-00126" />
+      <option name="project" value="LOCAL" />
+      <updated>1711981047423</updated>
+    </task>
+    <task id="LOCAL-00127" summary="feat: added CreateUserRequest">
+      <option name="closed" value="true" />
+      <created>1711981069410</created>
+      <option name="number" value="00127" />
+      <option name="presentableId" value="LOCAL-00127" />
+      <option name="project" value="LOCAL" />
+      <updated>1711981069410</updated>
+    </task>
+    <task id="LOCAL-00128" summary="feat: added EmailAvailableGateway Implementation">
+      <option name="closed" value="true" />
+      <created>1711981120082</created>
+      <option name="number" value="00128" />
+      <option name="presentableId" value="LOCAL-00128" />
+      <option name="project" value="LOCAL" />
+      <updated>1711981120082</updated>
+    </task>
+    <task id="LOCAL-00129" summary="feat: added base response for  controllers">
+      <option name="closed" value="true" />
+      <created>1711981142929</created>
+      <option name="number" value="00129" />
+      <option name="presentableId" value="LOCAL-00129" />
+      <option name="project" value="LOCAL" />
+      <updated>1711981142929</updated>
+    </task>
+    <task id="LOCAL-00130" summary="feat: added error response for default   controllers">
+      <option name="closed" value="true" />
+      <created>1711981166414</created>
+      <option name="number" value="00130" />
+      <option name="presentableId" value="LOCAL-00130" />
+      <option name="project" value="LOCAL" />
+      <updated>1711981166414</updated>
+    </task>
+    <task id="LOCAL-00131" summary="delete: deleted yml files">
+      <option name="closed" value="true" />
+      <created>1711981191223</created>
+      <option name="number" value="00131" />
+      <option name="presentableId" value="LOCAL-00131" />
+      <option name="project" value="LOCAL" />
+      <updated>1711981191223</updated>
+    </task>
+    <task id="LOCAL-00132" summary="feat: application.properties">
+      <option name="closed" value="true" />
+      <created>1711981215730</created>
+      <option name="number" value="00132" />
+      <option name="presentableId" value="LOCAL-00132" />
+      <option name="project" value="LOCAL" />
+      <updated>1711981215730</updated>
+    </task>
+    <task id="LOCAL-00133" summary="chore: add boolean search by existing taxnumber and email">
+      <option name="closed" value="true" />
+      <created>1711981277400</created>
+      <option name="number" value="00133" />
+      <option name="presentableId" value="LOCAL-00133" />
+      <option name="project" value="LOCAL" />
+      <updated>1711981277400</updated>
+    </task>
+    <task id="LOCAL-00134" summary="chore: add more configurations">
+      <option name="closed" value="true" />
+      <created>1711981295903</created>
+      <option name="number" value="00134" />
+      <option name="presentableId" value="LOCAL-00134" />
+      <option name="project" value="LOCAL" />
+      <updated>1711981295903</updated>
+    </task>
+    <task id="LOCAL-00135" summary="chore: add more configurations">
+      <option name="closed" value="true" />
+      <created>1711981299847</created>
+      <option name="number" value="00135" />
+      <option name="presentableId" value="LOCAL-00135" />
+      <option name="project" value="LOCAL" />
+      <updated>1711981299847</updated>
+    </task>
+    <task id="LOCAL-00136" summary="chore: added constructors and wallet mapper">
+      <option name="closed" value="true" />
+      <created>1711989479375</created>
+      <option name="number" value="00136" />
+      <option name="presentableId" value="LOCAL-00136" />
+      <option name="project" value="LOCAL" />
+      <updated>1711989479375</updated>
+    </task>
+    <task id="LOCAL-00137" summary="chore: added constructors and user entity mapper">
+      <option name="closed" value="true" />
+      <created>1711989501010</created>
+      <option name="number" value="00137" />
+      <option name="presentableId" value="LOCAL-00137" />
+      <option name="project" value="LOCAL" />
+      <updated>1711989501010</updated>
+    </task>
+    <task id="LOCAL-00138" summary="chore: added findByUserEntityTaxNumber">
+      <option name="closed" value="true" />
+      <created>1711989606568</created>
+      <option name="number" value="00138" />
+      <option name="presentableId" value="LOCAL-00138" />
+      <option name="project" value="LOCAL" />
+      <updated>1711989606569</updated>
+    </task>
+    <task id="LOCAL-00139" summary="chore: added this.id">
+      <option name="closed" value="true" />
+      <created>1711989857147</created>
+      <option name="number" value="00139" />
+      <option name="presentableId" value="LOCAL-00139" />
+      <option name="project" value="LOCAL" />
+      <updated>1711989857147</updated>
+    </task>
+    <task id="LOCAL-00140" summary="chore: added Exeption">
+      <option name="closed" value="true" />
+      <created>1711989943853</created>
+      <option name="number" value="00140" />
+      <option name="presentableId" value="LOCAL-00140" />
+      <option name="project" value="LOCAL" />
+      <updated>1711989943853</updated>
+    </task>
+    <task id="LOCAL-00141" summary="chore: added toTransactionPin">
+      <option name="closed" value="true" />
+      <created>1711989961282</created>
+      <option name="number" value="00141" />
+      <option name="presentableId" value="LOCAL-00141" />
+      <option name="project" value="LOCAL" />
+      <updated>1711989961282</updated>
+    </task>
+    <task id="LOCAL-00142" summary="chore: added exception">
+      <option name="closed" value="true" />
+      <created>1711990042515</created>
+      <option name="number" value="00142" />
+      <option name="presentableId" value="LOCAL-00142" />
+      <option name="project" value="LOCAL" />
+      <updated>1711990042515</updated>
+    </task>
+    <task id="LOCAL-00143" summary="chore: added     @Transactional">
+      <option name="closed" value="true" />
+      <created>1711990066934</created>
+      <option name="number" value="00143" />
+      <option name="presentableId" value="LOCAL-00143" />
+      <option name="project" value="LOCAL" />
+      <updated>1711990066934</updated>
+    </task>
+    <task id="LOCAL-00144" summary="chore: added exception">
+      <option name="closed" value="true" />
+      <created>1711990089463</created>
+      <option name="number" value="00144" />
+      <option name="presentableId" value="LOCAL-00144" />
+      <option name="project" value="LOCAL" />
+      <updated>1711990089463</updated>
+    </task>
+    <task id="LOCAL-00145" summary="chore: added exception">
+      <option name="closed" value="true" />
+      <created>1711990101295</created>
+      <option name="number" value="00145" />
+      <option name="presentableId" value="LOCAL-00145" />
+      <option name="project" value="LOCAL" />
+      <updated>1711990101295</updated>
+    </task>
+    <task id="LOCAL-00146" summary="chore: added exception">
+      <option name="closed" value="true" />
+      <created>1711990112024</created>
+      <option name="number" value="00146" />
+      <option name="presentableId" value="LOCAL-00146" />
+      <option name="project" value="LOCAL" />
+      <updated>1711990112024</updated>
+    </task>
+    <option name="localTasksCounter" value="147" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="refactore:  modified to the correct migration naming standard" />
-    <MESSAGE value="feat:  add user entity to repository" />
-    <MESSAGE value="feat:  add DesafioPicPayApplication class" />
-    <MESSAGE value="refactory:  modified port 8080 to 8081" />
-    <MESSAGE value="refactory:  REMOVED REPEATED DEPENDENCIES" />
-    <MESSAGE value="feat: create WalletEntity" />
-    <MESSAGE value="feat: create UserEntity" />
-    <MESSAGE value="feat: create TransactionPinEntity" />
-    <MESSAGE value="feat: create TransactionEntity" />
-    <MESSAGE value="feat: create TransactionEntityRepository interface" />
-    <MESSAGE value="feat: create TransactionPinEntityRepository interface" />
-    <MESSAGE value="feat: create UserEntityRepository interface" />
-    <MESSAGE value="feat: create WalletEntityRepository interface" />
-    <MESSAGE value="refactor: moved to infrastructure folder" />
-    <MESSAGE value="feat: add WalletMapper" />
-    <MESSAGE value="feat: add WalletEntity" />
-    <MESSAGE value="feat: add UserMapper" />
-    <MESSAGE value="feat: add UserEntity" />
-    <MESSAGE value="feat: add utilities for creating logs" />
-    <MESSAGE value="feat: add TransactionPinMapper" />
-    <MESSAGE value="feat: add TransactionEntity" />
-    <MESSAGE value="feat: add TransactionPinEntity" />
-    <MESSAGE value="refactor: excluding set transaction pin methods" />
     <MESSAGE value="feat: add CreateUserGateway implementation" />
     <MESSAGE value="feat: add more components" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add more components" />
+    <MESSAGE value="refactor: modified to postgres default" />
+    <MESSAGE value="refactor: changed from localdatetime to timestamp" />
+    <MESSAGE value="chore: added to user" />
+    <MESSAGE value="feat: added ValidationError" />
+    <MESSAGE value="feat: added user controller" />
+    <MESSAGE value="feat: added user config ben" />
+    <MESSAGE value="feat: added TaxNumberAvailableGateway Implementation" />
+    <MESSAGE value="feat: added CreateUserRequest" />
+    <MESSAGE value="feat: added EmailAvailableGateway Implementation" />
+    <MESSAGE value="feat: added base response for  controllers" />
+    <MESSAGE value="feat: added error response for default   controllers" />
+    <MESSAGE value="delete: deleted yml files" />
+    <MESSAGE value="feat: application.properties" />
+    <MESSAGE value="chore: add boolean search by existing taxnumber and email" />
+    <MESSAGE value="chore: add more configurations" />
+    <MESSAGE value="chore: added constructors and wallet mapper" />
+    <MESSAGE value="chore: added constructors and user entity mapper" />
+    <MESSAGE value="chore: added findByUserEntityTaxNumber" />
+    <MESSAGE value="chore: added this.id" />
+    <MESSAGE value="chore: added Exeption" />
+    <MESSAGE value="chore: added toTransactionPin" />
+    <MESSAGE value="chore: added     @Transactional" />
+    <MESSAGE value="chore: added exception" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: added exception" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/application/src/main/java/br/com/curso/application/usecaseImpl/CreateUserUseCaseImpl.java</url>
-          <line>42</line>
+          <line>40</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
