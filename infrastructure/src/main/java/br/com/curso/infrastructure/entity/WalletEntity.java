@@ -6,41 +6,42 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
+import java.sql.Timestamp;
 import java.time.LocalDateTime;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "Wallets")
+@Table(name = "wallets")
 public class WalletEntity {
     @Column(name = "Id", nullable = false)
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
-    @Column(name = "Balance", nullable = false)
+    @Column(name = "balance", nullable = false)
     private BigDecimal balance;
 
     @OneToOne
-    @JoinColumn(name = "UserId")
+    @JoinColumn(name = "userid")
     private UserEntity userEntity;
 
     @OneToOne
-    @JoinColumn(name = "TransactionPinId")
+    @JoinColumn(name = "transactionpinid")
     private TransactionPinEntity transactionPinEntity;
 
-    @Column(name = "CreatedAt", nullable = false)
-    private LocalDateTime createdAt;
+    @Column(name = "createdat", nullable = false)
+    private Timestamp createdAt;
 
-    @Column(name = "UpdatedAt")
-    private LocalDateTime UpdatedAt;
+    @Column(name = "updateat")
+    private Timestamp updatedAt;
 
-    public WalletEntity(BigDecimal balance, UserEntity userEntity, TransactionPinEntity transactionPinEntity, LocalDateTime createdAt, LocalDateTime updatedAt) {
+    public WalletEntity(BigDecimal balance, UserEntity userEntity, TransactionPinEntity transactionPinEntity, Timestamp createdAt, Timestamp updatedAt) {
         this.balance = balance;
         this.userEntity = userEntity;
         this.transactionPinEntity = transactionPinEntity;
         this.createdAt = createdAt;
-        UpdatedAt = updatedAt;
+        updatedAt = updatedAt;
     }
 }
