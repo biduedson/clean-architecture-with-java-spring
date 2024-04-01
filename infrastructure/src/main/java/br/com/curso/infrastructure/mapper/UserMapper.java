@@ -6,9 +6,6 @@ import br.com.curso.infrastructure.dto.request.CreateUserRequest;
 import br.com.curso.infrastructure.entity.UserEntity;
 import org.springframework.stereotype.Component;
 
-import java.sql.Timestamp;
-import java.time.LocalDateTime;
-
 @Component
 public class UserMapper {
 
@@ -34,6 +31,18 @@ public class UserMapper {
                 taxNumber,
                 request.fullName(),
                 request.type()
+                );
+    }
+
+    public User toUser(UserEntity userEntity) throws Exception {
+        TaxNumber taxNumber =  new TaxNumber(userEntity.getTaxNumber()) ;
+
+        return new User(
+                userEntity.getEmail(),
+                userEntity.getPassword(),
+                taxNumber,
+                userEntity.getFullName(),
+                userEntity.getType()
         );
     }
 }
