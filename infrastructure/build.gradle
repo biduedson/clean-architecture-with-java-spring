@@ -2,6 +2,7 @@ plugins {
     id 'java'
     id 'org.springframework.boot' version '3.1.3'
     id 'io.spring.dependency-management' version '1.1.3'
+    id 'org.flywaydb.flyway' version '8.5.7'
 }
 
 group = 'br.com.curso'
@@ -12,8 +13,6 @@ repositories {
 }
 
 dependencies {
-
-
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     implementation 'org.springframework.boot:spring-boot-devtools'
@@ -21,17 +20,14 @@ dependencies {
     //implementation 'org.springframework.boot:spring-boot-starter-security'
 
     implementation 'com.auth0:java-jwt:4.2.1'
-    compileOnly 'org.projectlombok:lombok'
-    annotationProcessor 'org.projectlombok:lombok'
 
     implementation 'org.flywaydb:flyway-core'
-    implementation 'org.flywaydb:flyway-mysql'
-
-    runtimeOnly 'com.h2database:h2'
-    runtimeOnly 'com.mysql:mysql-connector-j'
+    compileOnly 'org.projectlombok:lombok'
+    runtimeOnly 'org.postgresql:postgresql'
+    annotationProcessor 'org.projectlombok:lombok'
     implementation 'org.apache.commons:commons-lang3:3.8.1'
-
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
 
     implementation project(path: ":core")
     implementation project(path: ":usecase")
@@ -40,6 +36,12 @@ dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter'
 }
 
+flyway {
+    url = 'jdbc:postgresql://localhost:5432/desafio_picpayDB' // Substitua pelo URL do seu banco de dados PostgreSQL
+    user = 'postgres' // Substitua pelo nome de usuário do banco de dados
+    password = 'bidu1981@' // Substitua pela senha do banco de dados
+    schemas = ['public'] // Substitua pelo schema do seu banco de dados, se necessário
+}
 test {
     useJUnitPlatform()
 }
