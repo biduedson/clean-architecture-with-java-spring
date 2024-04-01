@@ -19,7 +19,7 @@ public class User {
    private Timestamp updateAt;
 
     public User(String emain, String password, TaxNumber taxNumber, String fullname, UserTypeEnum type) {
-        this.id = id;
+        this.id = this.id;
         this.emain = emain;
         this.password = password;
         this.taxNumber = taxNumber;
