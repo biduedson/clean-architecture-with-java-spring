@@ -4,6 +4,7 @@ import br.com.curso.core.domain.enuns.UserTypeEnum;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.sql.Timestamp;
 import java.time.LocalDateTime;
 import java.util.UUID;
 
@@ -18,26 +19,26 @@ public class UserEntity {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID id;
 
-    @Column(name = "Email", nullable = false)
+    @Column(name = "email", nullable = false)
     private String email;
 
-    @Column(name = "Password", nullable = false)
+    @Column(name = "password", nullable = false)
     private String password;
 
-    @Column(name = "TaxNumber", nullable = false)
+    @Column(name = "taxnumber", nullable = false)
     private String taxNumber;
 
-    @Column(name = "FullName",nullable = false)
+    @Column(name = "Fullname",nullable = false)
     private String FullName;
 
-    @Column(name = "Type", nullable = false)
+    @Column(name = "type", nullable = false)
     private UserTypeEnum type;
 
-    @Column(name = "CreatedAt", nullable = false)
-    private LocalDateTime createdAt;
+    @Column(name = "createdat", nullable = false)
+    private Timestamp createAt;
 
-    @Column(name = "UpdatedAt")
-    private LocalDateTime UpdatedAt;
+    @Column(name = "updateat")
+    private Timestamp UpdatedAt;
 
 
 }
