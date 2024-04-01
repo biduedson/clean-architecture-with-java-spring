@@ -10,6 +10,8 @@ import br.com.curso.infrastructure.repository.TransactionPinEntityRepository;
 import br.com.curso.infrastructure.repository.UserEntityRepository;
 import br.com.curso.infrastructure.repository.WalletEntityRepository;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
 import static br.com.curso.infrastructure.utils.Utilities.log;
 
 @Service
@@ -32,6 +34,7 @@ public class CreateUserGatewayImpl implements CreateUserGateway {
     }
 
     @Override
+    @Transactional
     public boolean create(User user, Wallet wallet) {
         try {
             log.info("Inicio da criação do usuario::CreateUserGatewayImpl");
