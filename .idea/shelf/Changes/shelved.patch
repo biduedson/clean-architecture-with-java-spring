@@ -1,0 +1,19 @@
+Index: infrastructure/src/main/resources/db/migration/V4__CREATE_TABLE_TRANSACTIONS.sql
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>CREATE TABLE Transactions(\r\nId  BIGINT AUTO_INCREMENT PRIMARY KEY,\r\nFromWallet BIGINT NOT NULL,\r\nToWallet BIGINT NOT NULL,\r\nTransactionValue DECIMAL(10,2) NOT NULL,\r\nStatus VARCHAR(30) NOT NULL,\r\nCreatedAt DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,\r\nUpdatedAt DATETIME,\r\n\r\nFOREIGN KEY(FromWallet) REFERENCES Wallets(Id),\r\nFOREIGN KEY(ToWallet) REFERENCES Wallets(Id)\r\n);
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/infrastructure/src/main/resources/db/migration/V4__CREATE_TABLE_TRANSACTIONS.sql b/infrastructure/src/main/resources/db/migration/V4__CREATE_TABLE_TRANSACTIONS.sql
+--- a/infrastructure/src/main/resources/db/migration/V4__CREATE_TABLE_TRANSACTIONS.sql	(revision a0e9db14db45902a9c6a25165b87ec4ce7e298f2)
++++ b/infrastructure/src/main/resources/db/migration/V4__CREATE_TABLE_TRANSACTIONS.sql	(date 1711721006979)
+@@ -5,7 +5,7 @@
+ TransactionValue DECIMAL(10,2) NOT NULL,
+ Status VARCHAR(30) NOT NULL,
+ CreatedAt DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+-UpdatedAt DATETIME,
++UpdateAt DATETIME,
+ 
+ FOREIGN KEY(FromWallet) REFERENCES Wallets(Id),
+ FOREIGN KEY(ToWallet) REFERENCES Wallets(Id)
