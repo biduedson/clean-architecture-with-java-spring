@@ -17,7 +17,7 @@ public class CreateTransactionGatewayImpl implements CreateTransactionGateway {
     }
 
     @Override
-    public Transaction create(Transaction transaction)throws Exception {
+    public Transaction create(Transaction transaction){
         try{
             var transactionEntity = transactionMapper.createTransaction(transaction);
             return transactionMapper.toTransaction(transactionEntityRepository.save(transactionEntity));
