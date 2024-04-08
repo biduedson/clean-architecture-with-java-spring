@@ -4,19 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d9a9ba78-94fa-42ab-a441-14381b11a422" name="Changes" comment="feat: add TransactionMapper">
-      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/java/br/com/curso/infrastructure/service/CreateTransactionGatewayImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/java/br/com/curso/infrastructure/service/TransactionValidateGatewayImpl.java" afterDir="false" />
+    <list default="true" id="d9a9ba78-94fa-42ab-a441-14381b11a422" name="Changes" comment="chore: configuration">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/main/java/br/com/curso/application/gateway/CreateTransactionGateway.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/java/br/com/curso/application/gateway/CreateTransactionGateway.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/main/java/br/com/curso/application/usecaseImpl/CreateTransactionUseCaseImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/java/br/com/curso/application/usecaseImpl/CreateTransactionUseCaseImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/src/main/java/br/com/curso/core/exception/InternalServerError.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/br/com/curso/infrastructure/config/UserConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/java/br/com/curso/infrastructure/config/UserConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/br/com/curso/infrastructure/entity/TransactionEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/java/br/com/curso/infrastructure/entity/TransactionEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/br/com/curso/infrastructure/mapper/WalletMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/java/br/com/curso/infrastructure/mapper/WalletMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/usecase/src/main/java/br/com/curso/usecase/CreateTransactionUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/usecase/src/main/java/br/com/curso/usecase/CreateTransactionUseCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/br/com/curso/infrastructure/service/CreateTransactionGatewayImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/java/br/com/curso/infrastructure/service/CreateTransactionGatewayImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,86 +112,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1711115016575</updated>
-    </task>
-    <task id="LOCAL-00105" summary="feat: add more components">
-      <option name="closed" value="true" />
-      <created>1711657344009</created>
-      <option name="number" value="00105" />
-      <option name="presentableId" value="LOCAL-00105" />
-      <option name="project" value="LOCAL" />
-      <updated>1711657344009</updated>
-    </task>
-    <task id="LOCAL-00106" summary="feat: add WalletMapper">
-      <option name="closed" value="true" />
-      <created>1711724312252</created>
-      <option name="number" value="00106" />
-      <option name="presentableId" value="LOCAL-00106" />
-      <option name="project" value="LOCAL" />
-      <updated>1711724312252</updated>
-    </task>
-    <task id="LOCAL-00107" summary="feat: add WalletEntity">
-      <option name="closed" value="true" />
-      <created>1711724325986</created>
-      <option name="number" value="00107" />
-      <option name="presentableId" value="LOCAL-00107" />
-      <option name="project" value="LOCAL" />
-      <updated>1711724325986</updated>
-    </task>
-    <task id="LOCAL-00108" summary="feat: add UserMapper">
-      <option name="closed" value="true" />
-      <created>1711724336231</created>
-      <option name="number" value="00108" />
-      <option name="presentableId" value="LOCAL-00108" />
-      <option name="project" value="LOCAL" />
-      <updated>1711724336231</updated>
-    </task>
-    <task id="LOCAL-00109" summary="feat: add UserEntity">
-      <option name="closed" value="true" />
-      <created>1711724349883</created>
-      <option name="number" value="00109" />
-      <option name="presentableId" value="LOCAL-00109" />
-      <option name="project" value="LOCAL" />
-      <updated>1711724349883</updated>
-    </task>
-    <task id="LOCAL-00110" summary="feat: add utilities for creating logs">
-      <option name="closed" value="true" />
-      <created>1711724401708</created>
-      <option name="number" value="00110" />
-      <option name="presentableId" value="LOCAL-00110" />
-      <option name="project" value="LOCAL" />
-      <updated>1711724401708</updated>
-    </task>
-    <task id="LOCAL-00111" summary="feat: add TransactionPinMapper">
-      <option name="closed" value="true" />
-      <created>1711724413623</created>
-      <option name="number" value="00111" />
-      <option name="presentableId" value="LOCAL-00111" />
-      <option name="project" value="LOCAL" />
-      <updated>1711724413623</updated>
-    </task>
-    <task id="LOCAL-00112" summary="feat: add TransactionEntity">
-      <option name="closed" value="true" />
-      <created>1711724436498</created>
-      <option name="number" value="00112" />
-      <option name="presentableId" value="LOCAL-00112" />
-      <option name="project" value="LOCAL" />
-      <updated>1711724436498</updated>
-    </task>
-    <task id="LOCAL-00113" summary="feat: add TransactionPinEntity">
-      <option name="closed" value="true" />
-      <created>1711724448408</created>
-      <option name="number" value="00113" />
-      <option name="presentableId" value="LOCAL-00113" />
-      <option name="project" value="LOCAL" />
-      <updated>1711724448408</updated>
-    </task>
-    <task id="LOCAL-00114" summary="refactor: excluding set transaction pin methods">
-      <option name="closed" value="true" />
-      <created>1711724550570</created>
-      <option name="number" value="00114" />
-      <option name="presentableId" value="LOCAL-00114" />
-      <option name="project" value="LOCAL" />
-      <updated>1711724550570</updated>
     </task>
     <task id="LOCAL-00115" summary="feat: add CreateUserGateway implementation">
       <option name="closed" value="true" />
@@ -514,17 +425,90 @@
       <option name="project" value="LOCAL" />
       <updated>1712594603014</updated>
     </task>
-    <option name="localTasksCounter" value="154" />
+    <task id="LOCAL-00154" summary="feat: add TransactionValidateGatewayImpl">
+      <option name="closed" value="true" />
+      <created>1712595108910</created>
+      <option name="number" value="00154" />
+      <option name="presentableId" value="LOCAL-00154" />
+      <option name="project" value="LOCAL" />
+      <updated>1712595108910</updated>
+    </task>
+    <task id="LOCAL-00155" summary="feat: add TransactionGatewayImpl">
+      <option name="closed" value="true" />
+      <created>1712595166147</created>
+      <option name="number" value="00155" />
+      <option name="presentableId" value="LOCAL-00155" />
+      <option name="project" value="LOCAL" />
+      <updated>1712595166147</updated>
+    </task>
+    <task id="LOCAL-00156" summary="chere: add towalletEntity">
+      <option name="closed" value="true" />
+      <created>1712595198169</created>
+      <option name="number" value="00156" />
+      <option name="presentableId" value="LOCAL-00156" />
+      <option name="project" value="LOCAL" />
+      <updated>1712595198170</updated>
+    </task>
+    <task id="LOCAL-00157" summary="chere: add throws Exception">
+      <option name="closed" value="true" />
+      <created>1712595235635</created>
+      <option name="number" value="00157" />
+      <option name="presentableId" value="LOCAL-00157" />
+      <option name="project" value="LOCAL" />
+      <updated>1712595235635</updated>
+    </task>
+    <task id="LOCAL-00158" summary="chore: add throws Exception">
+      <option name="closed" value="true" />
+      <created>1712595252871</created>
+      <option name="number" value="00158" />
+      <option name="presentableId" value="LOCAL-00158" />
+      <option name="project" value="LOCAL" />
+      <updated>1712595252871</updated>
+    </task>
+    <task id="LOCAL-00159" summary="chore: add throws Exception">
+      <option name="closed" value="true" />
+      <created>1712595269049</created>
+      <option name="number" value="00159" />
+      <option name="presentableId" value="LOCAL-00159" />
+      <option name="project" value="LOCAL" />
+      <updated>1712595269049</updated>
+    </task>
+    <task id="LOCAL-00160" summary="chore: add TransactionEntity instance">
+      <option name="closed" value="true" />
+      <created>1712595312980</created>
+      <option name="number" value="00160" />
+      <option name="presentableId" value="LOCAL-00160" />
+      <option name="project" value="LOCAL" />
+      <updated>1712595312981</updated>
+    </task>
+    <task id="LOCAL-00161" summary="chore: configuration">
+      <option name="closed" value="true" />
+      <created>1712595395745</created>
+      <option name="number" value="00161" />
+      <option name="presentableId" value="LOCAL-00161" />
+      <option name="project" value="LOCAL" />
+      <updated>1712595395745</updated>
+    </task>
+    <task id="LOCAL-00162" summary="chore: configuration">
+      <option name="closed" value="true" />
+      <created>1712595399161</created>
+      <option name="number" value="00162" />
+      <option name="presentableId" value="LOCAL-00162" />
+      <option name="project" value="LOCAL" />
+      <updated>1712595399161</updated>
+    </task>
+    <task id="LOCAL-00163" summary="chore: configuration">
+      <option name="closed" value="true" />
+      <created>1712595402323</created>
+      <option name="number" value="00163" />
+      <option name="presentableId" value="LOCAL-00163" />
+      <option name="project" value="LOCAL" />
+      <updated>1712595402323</updated>
+    </task>
+    <option name="localTasksCounter" value="164" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: added user config ben" />
-    <MESSAGE value="feat: added TaxNumberAvailableGateway Implementation" />
-    <MESSAGE value="feat: added CreateUserRequest" />
-    <MESSAGE value="feat: added EmailAvailableGateway Implementation" />
-    <MESSAGE value="feat: added base response for  controllers" />
-    <MESSAGE value="feat: added error response for default   controllers" />
-    <MESSAGE value="delete: deleted yml files" />
     <MESSAGE value="feat: application.properties" />
     <MESSAGE value="chore: add boolean search by existing taxnumber and email" />
     <MESSAGE value="chore: add more configurations" />
@@ -543,7 +527,14 @@
     <MESSAGE value="feat: add ApiValidateService" />
     <MESSAGE value="feat: add ApiValidateResponse" />
     <MESSAGE value="feat: add TransactionMapper" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add TransactionMapper" />
+    <MESSAGE value="feat: add TransactionValidateGatewayImpl" />
+    <MESSAGE value="feat: add TransactionGatewayImpl" />
+    <MESSAGE value="chere: add towalletEntity" />
+    <MESSAGE value="chere: add throws Exception" />
+    <MESSAGE value="chore: add throws Exception" />
+    <MESSAGE value="chore: add TransactionEntity instance" />
+    <MESSAGE value="chore: configuration" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: configuration" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
