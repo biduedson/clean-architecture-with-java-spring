@@ -4,10 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d9a9ba78-94fa-42ab-a441-14381b11a422" name="Changes" comment="chore: added exception">
-      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/java/br/com/curso/infrastructure/service/FindWalletByTaxNumberGatewayImpl.java" afterDir="false" />
+    <list default="true" id="d9a9ba78-94fa-42ab-a441-14381b11a422" name="Changes" comment="feat: add TransactionMapper">
+      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/java/br/com/curso/infrastructure/service/CreateTransactionGatewayImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/java/br/com/curso/infrastructure/service/TransactionValidateGatewayImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/main/java/br/com/curso/application/gateway/CreateTransactionGateway.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/java/br/com/curso/application/gateway/CreateTransactionGateway.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/main/java/br/com/curso/application/usecaseImpl/CreateTransactionUseCaseImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/java/br/com/curso/application/usecaseImpl/CreateTransactionUseCaseImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/src/main/java/br/com/curso/core/exception/InternalServerError.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/br/com/curso/infrastructure/config/UserConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/java/br/com/curso/infrastructure/config/UserConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/br/com/curso/infrastructure/entity/TransactionEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/java/br/com/curso/infrastructure/entity/TransactionEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/br/com/curso/infrastructure/mapper/WalletMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/java/br/com/curso/infrastructure/mapper/WalletMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/usecase/src/main/java/br/com/curso/usecase/CreateTransactionUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/usecase/src/main/java/br/com/curso/usecase/CreateTransactionUseCase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,27 +77,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.clean-architecture-with-java-spring-picpay.executor": "Run",
-    "Gradle.clean-architecture-with-java-spring-picpay:infrastructure [:infrastructure:DesafioPicPayApplication.main()].executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "jdk.selected.JAVA_MODULE": "17",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Edson/Downloads/demo",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.clean-architecture-with-java-spring-picpay.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.clean-architecture-with-java-spring-picpay:infrastructure [:infrastructure:DesafioPicPayApplication.main()].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Edson/Downloads/demo&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="br.com.curso.infrastructure.mapper" />
+      <recent name="br.com.curso.infrastructure.client" />
+      <recent name="br.com.curso.infrastructure.client.dto.response" />
       <recent name="br.com.curso.infrastructure.dto.response" />
       <recent name="br.com.curso.infrastructure.controller.dto.request" />
-      <recent name="br.com.curso.infrastructure.controller.dto.response" />
-      <recent name="br.com.curso.core.exception" />
-      <recent name="br.com.curso.core.exception.enuns" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Projetos JAVA\clean-architecture-with-java-spring-picpay\infrastructure\src\main\resources\db\migration" />
@@ -112,62 +121,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1711115016575</updated>
-    </task>
-    <task id="LOCAL-00098" summary="feat: create TransactionPinEntity">
-      <option name="closed" value="true" />
-      <created>1711657079296</created>
-      <option name="number" value="00098" />
-      <option name="presentableId" value="LOCAL-00098" />
-      <option name="project" value="LOCAL" />
-      <updated>1711657079296</updated>
-    </task>
-    <task id="LOCAL-00099" summary="feat: create TransactionEntity">
-      <option name="closed" value="true" />
-      <created>1711657091051</created>
-      <option name="number" value="00099" />
-      <option name="presentableId" value="LOCAL-00099" />
-      <option name="project" value="LOCAL" />
-      <updated>1711657091051</updated>
-    </task>
-    <task id="LOCAL-00100" summary="feat: create TransactionEntityRepository interface">
-      <option name="closed" value="true" />
-      <created>1711657114661</created>
-      <option name="number" value="00100" />
-      <option name="presentableId" value="LOCAL-00100" />
-      <option name="project" value="LOCAL" />
-      <updated>1711657114661</updated>
-    </task>
-    <task id="LOCAL-00101" summary="feat: create TransactionPinEntityRepository interface">
-      <option name="closed" value="true" />
-      <created>1711657133616</created>
-      <option name="number" value="00101" />
-      <option name="presentableId" value="LOCAL-00101" />
-      <option name="project" value="LOCAL" />
-      <updated>1711657133616</updated>
-    </task>
-    <task id="LOCAL-00102" summary="feat: create UserEntityRepository interface">
-      <option name="closed" value="true" />
-      <created>1711657146566</created>
-      <option name="number" value="00102" />
-      <option name="presentableId" value="LOCAL-00102" />
-      <option name="project" value="LOCAL" />
-      <updated>1711657146566</updated>
-    </task>
-    <task id="LOCAL-00103" summary="feat: create WalletEntityRepository interface">
-      <option name="closed" value="true" />
-      <created>1711657163548</created>
-      <option name="number" value="00103" />
-      <option name="presentableId" value="LOCAL-00103" />
-      <option name="project" value="LOCAL" />
-      <updated>1711657163548</updated>
-    </task>
-    <task id="LOCAL-00104" summary="refactor: moved to infrastructure folder">
-      <option name="closed" value="true" />
-      <created>1711657297365</created>
-      <option name="number" value="00104" />
-      <option name="presentableId" value="LOCAL-00104" />
-      <option name="project" value="LOCAL" />
-      <updated>1711657297365</updated>
     </task>
     <task id="LOCAL-00105" summary="feat: add more components">
       <option name="closed" value="true" />
@@ -505,17 +458,66 @@
       <option name="project" value="LOCAL" />
       <updated>1711990112024</updated>
     </task>
-    <option name="localTasksCounter" value="147" />
+    <task id="LOCAL-00147" summary="feat: added FindWalletByTaxNumberGateway Implementation">
+      <option name="closed" value="true" />
+      <created>1711990170229</created>
+      <option name="number" value="00147" />
+      <option name="presentableId" value="LOCAL-00147" />
+      <option name="project" value="LOCAL" />
+      <updated>1711990170229</updated>
+    </task>
+    <task id="LOCAL-00148" summary="chore: added new configurations">
+      <option name="closed" value="true" />
+      <created>1711990189995</created>
+      <option name="number" value="00148" />
+      <option name="presentableId" value="LOCAL-00148" />
+      <option name="project" value="LOCAL" />
+      <updated>1711990189995</updated>
+    </task>
+    <task id="LOCAL-00149" summary="feat: add TransactionPinValidateGateway Implementation">
+      <option name="closed" value="true" />
+      <created>1712079547040</created>
+      <option name="number" value="00149" />
+      <option name="presentableId" value="LOCAL-00149" />
+      <option name="project" value="LOCAL" />
+      <updated>1712079547041</updated>
+    </task>
+    <task id="LOCAL-00150" summary="feat: add ApiValidateClient">
+      <option name="closed" value="true" />
+      <created>1712594548078</created>
+      <option name="number" value="00150" />
+      <option name="presentableId" value="LOCAL-00150" />
+      <option name="project" value="LOCAL" />
+      <updated>1712594548078</updated>
+    </task>
+    <task id="LOCAL-00151" summary="feat: add ApiValidateService">
+      <option name="closed" value="true" />
+      <created>1712594559538</created>
+      <option name="number" value="00151" />
+      <option name="presentableId" value="LOCAL-00151" />
+      <option name="project" value="LOCAL" />
+      <updated>1712594559538</updated>
+    </task>
+    <task id="LOCAL-00152" summary="feat: add ApiValidateResponse">
+      <option name="closed" value="true" />
+      <created>1712594584950</created>
+      <option name="number" value="00152" />
+      <option name="presentableId" value="LOCAL-00152" />
+      <option name="project" value="LOCAL" />
+      <updated>1712594584950</updated>
+    </task>
+    <task id="LOCAL-00153" summary="feat: add TransactionMapper">
+      <option name="closed" value="true" />
+      <created>1712594603014</created>
+      <option name="number" value="00153" />
+      <option name="presentableId" value="LOCAL-00153" />
+      <option name="project" value="LOCAL" />
+      <updated>1712594603014</updated>
+    </task>
+    <option name="localTasksCounter" value="154" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: add CreateUserGateway implementation" />
-    <MESSAGE value="feat: add more components" />
-    <MESSAGE value="refactor: modified to postgres default" />
-    <MESSAGE value="refactor: changed from localdatetime to timestamp" />
-    <MESSAGE value="chore: added to user" />
-    <MESSAGE value="feat: added ValidationError" />
-    <MESSAGE value="feat: added user controller" />
     <MESSAGE value="feat: added user config ben" />
     <MESSAGE value="feat: added TaxNumberAvailableGateway Implementation" />
     <MESSAGE value="feat: added CreateUserRequest" />
@@ -534,7 +536,14 @@
     <MESSAGE value="chore: added toTransactionPin" />
     <MESSAGE value="chore: added     @Transactional" />
     <MESSAGE value="chore: added exception" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore: added exception" />
+    <MESSAGE value="feat: added FindWalletByTaxNumberGateway Implementation" />
+    <MESSAGE value="chore: added new configurations" />
+    <MESSAGE value="feat: add TransactionPinValidateGateway Implementation" />
+    <MESSAGE value="feat: add ApiValidateClient" />
+    <MESSAGE value="feat: add ApiValidateService" />
+    <MESSAGE value="feat: add ApiValidateResponse" />
+    <MESSAGE value="feat: add TransactionMapper" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add TransactionMapper" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
